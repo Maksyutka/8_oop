@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.logo {
+	font-size: 48px;
+	margin: 10px 0;
+	font-weight: 900;
+	color: rgb(204, 54, 54);
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 7px;
+}
+
+.logo_black {
+	color: #000;
+}
+
+.video {
+	border-radius: 7px;
+	width: 100%;
+}
+
+.delete {
+	margin-right: auto;
+}
+
+.title {
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.comments {
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	width: 100%;
+}
+
+.comments__head {
+	padding: 10px;
+	background-color: rgb(238, 238, 238);
+	font-weight: 700;
+	font-size: 16px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.comment-inputs-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 15px;
+	grid-gap: 13px;
+}
+
+.comment-input {
+	flex-basis: 80%;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 7px;
+	outline: none;
+	padding: 10px;
+}
+
+.submit-btn {
+	flex-basis: 20%;
+	border: 1px solid black;
+	border-radius: 7px;
+	background-color: rgb(238, 238, 238);
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	opacity: 0.7;
+}
+
+.comment-item {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid black;
+	grid-gap: 15px;
+	padding: 10px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.comment__name-block {
+	margin: 0;
+}
+
+.comment__btns {
+	display: flex;
+	justify-content: flex-end;
+	grid-gap: 5px;
+}
+
+.comment__content-block {
+	margin: 0;
+}
+
+.like,
+.dislike,
+.delete {
+	background-color: rgb(238, 238, 238);
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.like:hover,
+.dislike:hover,
+.delete:hover {
+	opacity: 0.7;
+}
+
+.comments__footer {
+	height: 38px;
+	border: 1px solid black;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	background-color: rgb(238, 238, 238);
+}
